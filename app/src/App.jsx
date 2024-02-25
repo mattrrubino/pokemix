@@ -19,7 +19,7 @@ function PokemonSelector({ pokemon, code, onChange }) {
       <select className="capitalize mx-16 border border-black" value={selectedPokemon} onChange={onChangeInner}>
         {pokemon.map((item, i) => <option key={i} value={item}>{item}</option>)}
       </select>
-      <img className="w-[256px] h-[192px] my-[24px] nearest" src={`/swsh/${selectedPokemon}.png`} alt={selectedPokemon} />
+      <img className="w-[256px] h-[192px] my-[24px] nearest" src={`swsh/${selectedPokemon}.png`} alt={selectedPokemon} />
     </div>
   )
 }
@@ -69,8 +69,8 @@ function App() {
   const [pokemon1, setPokemon1] = useState("palkia")
 
   useEffect(() => {
-    tf.loadLayersModel("/decoder/model.json").then(setModel)
-    fetch("/codes.json").then(resp => resp.json().then(setCodes))
+    tf.loadLayersModel("decoder/model.json").then(setModel)
+    fetch("codes.json").then(resp => resp.json().then(setCodes))
   }, [])
 
   return (
