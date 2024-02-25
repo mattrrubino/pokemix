@@ -1,0 +1,6 @@
+tensorflow
+tensorflowjs
+keras
+matplotlib
+beautifulsoup4
+requests
