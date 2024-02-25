@@ -1,6 +1,6 @@
 # Pokémix
 
-This repository contains the source code for the Pokemon sprite interpolator. This web application uses a deep learning model to interpolate between sprite images, allowing one to generate new sprites.
+This repository contains the source code for the Pokemon sprite interpolator. This web application uses a deep learning model to interpolate between sprite images, allowing one to generate new sprites. The application is available to try on my [portfolio](https://www.matthewrubino.com/projects/pokemix).
 
 <p align="center">
   <img src="docs/demo.gif" />
